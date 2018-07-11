@@ -55,3 +55,5 @@ def over?(board)
 end
 
 def winner(board)
+  no_winner = nil
+  if !won
