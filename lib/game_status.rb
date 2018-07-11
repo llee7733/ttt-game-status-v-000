@@ -16,12 +16,17 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.each_with_index do |element, index|
+  WIN_COMBINATIONS.each_with_index do |element, index| 
     if position_taken?(board,element[0]) == TRUE
+        #checks for nonempty spots in the array
       if board[element[0]] == board[element[1]] && board[element[0]] == board[element[2]]
+        #win combinations for either O or X
         return WIN_COMBINATIONS[index]
       end
     end
   end
   return FALSE
 end
+
+def full?(board)
+  board
