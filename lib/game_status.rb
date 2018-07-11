@@ -40,9 +40,11 @@ def draw?(board)
 end
 
 def over?(board)
+  #checks for win conditions
   while won?(board)
     if draw?(board) == true || full?(board) == true
       return true
+  #winning condition /w full board
     elsif full?(board) == false
       return true
     end
