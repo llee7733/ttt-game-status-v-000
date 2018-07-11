@@ -61,7 +61,7 @@ def winner(board)
     #all non winners return nil
   else
     no_winner = board[won?(board)[0]]
-    #returns character of winning board combination.
+    #returns character of winning board combination
   end
   return no_winner
 end
