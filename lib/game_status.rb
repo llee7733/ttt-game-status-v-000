@@ -30,6 +30,7 @@ end
 
 def full?(board)
   board.all? do |index|
+    #checks for all positions taken on the board
     index == "X" || index == "O"
   end
 end
