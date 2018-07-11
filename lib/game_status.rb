@@ -34,3 +34,7 @@ def full?(board)
     index == "X" || index == "O"
   end
 end
+
+def draw?(board)
+  won?(board) == false && full?(board) == TRUE
+end
